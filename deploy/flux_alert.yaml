@@ -5,7 +5,7 @@ metadata:
   namespace: fluxcdtutorial
 spec:
   providerRef:
-    name: flux-github-provider
+    name: github-status-provider
   eventSeverity: info
   eventSources:
     - kind: Kustomization
