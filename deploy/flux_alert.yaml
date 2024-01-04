@@ -1,0 +1,13 @@
+apiVersion: notification.toolkit.fluxcd.io/v1beta1
+kind: Alert
+metadata:
+  name: flux-alert
+  namespace: fluxcdtutorial
+spec:
+  providerRef:
+    name: flux-github-provider
+  eventSeverity: info
+  eventSources:
+    - kind: Kustomization
+      name: k8s-nginxapp-sot
+      namespace: fluxcdtutorial
