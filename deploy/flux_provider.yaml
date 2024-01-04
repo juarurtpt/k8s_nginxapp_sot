@@ -8,4 +8,4 @@ spec:
   channel: general
   address: https://github.com/juarurtpt/k8s_nginxapp_sot
   secretRef:
-    name: github-secret
+    name: github-token
